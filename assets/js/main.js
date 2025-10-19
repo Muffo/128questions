@@ -43,7 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         filteredQuestions.forEach(question => {
             const li = document.createElement('li');
-            li.innerHTML = `<strong>${question.id}. ${question.question}</strong><br>Answers: ${question.answers.join(', ')}`;
+            let answersHtml = '';
+            if (question.answers.length > 1) {
+                answersHtml = '<ul>' + question.answers.map(answer => `<li>${answer}</li>`).join('') + '</ul>';
+            } else {
+                answersHtml = question.answers.join(', ');
+            }
+            li.innerHTML = `<strong>${question.id}. ${question.question}</strong><br>${answersHtml}`;
             questionsList.appendChild(li);
         });
     }

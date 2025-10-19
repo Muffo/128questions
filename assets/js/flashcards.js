@@ -22,7 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
     function showQuestion() {
         answerDiv.classList.add('hidden');
         questionDiv.textContent = allQuestions[currentQuestionIndex].question;
-        answerDiv.textContent = 'Answers: ' + allQuestions[currentQuestionIndex].answers.join(', ');
+        let answersHtml = '';
+        if (allQuestions[currentQuestionIndex].answers.length > 1) {
+            answersHtml = '<ul>' + allQuestions[currentQuestionIndex].answers.map(answer => `<li>${answer}</li>`).join('') + '</ul>';
+        } else {
+            answersHtml = allQuestions[currentQuestionIndex].answers.join(', ');
+        }
+        answerDiv.innerHTML = answersHtml;
     }
 
     function nextQuestion() {

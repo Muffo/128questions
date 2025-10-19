@@ -120,6 +120,18 @@ section h2 {
     color: #1a237e; /* Darker blue for question text */
 }
 
+#questions-list li ul {
+    padding-left: 20px; /* Indent the bullet points */
+}
+
+#questions-list li ul li {
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove border */
+    padding: 0.2rem 0; /* Adjust padding */
+    margin-bottom: 0; /* Remove margin */
+    list-style-type: disc; /* Use bullet points */
+}
+
 /* Flashcard Styles */
 #flashcard-container {
     text-align: center;
@@ -146,6 +158,14 @@ section h2 {
 #flashcard .answer {
     margin-top: 1rem;
     color: #3f51b5; /* Another shade of blue for answers */
+}
+
+#flashcard .answer ul {
+    padding-left: 20px; /* Indent the bullet points */
+}
+
+#flashcard .answer ul li {
+    list-style-type: disc; /* Use bullet points */
 }
 
 #next-question {
