@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Prepare for the U.S. Citizenship Test with 128 questions. Study, filter, and practice for success.">
+    <meta name="keywords" content="US Citizenship Test, Civics Test, 128 Questions, Study, Flashcards">
+    <meta name="author" content="GitHub Copilot">
+    <title>U.S. Citizenship Test Prep</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>U.S. Citizenship Test Prep</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">All Questions</a></li>
+                <li><a href="flashcards.html">Flashcards</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="filters">
+            <h2>Filter Questions</h2>
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="">All Categories</option>
+            </select>
+
+            <label for="subcategory">Subcategory:</label>
+            <select id="subcategory" name="subcategory">
+                <option value="">All Subcategories</option>
+            </select>
+        </section>
+
+        <section id="questions-list">
+            <h2>All Questions</h2>
+            <ul id="questions">
+                <!-- Questions will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 U.S. Citizenship Test Prep. All rights reserved.</p>
+    </footer>
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>
