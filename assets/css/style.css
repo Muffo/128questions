@@ -1,16 +1,16 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Modern font */
+    font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff; /* White background */
+    background-color: #fff;
     color: #333;
     line-height: 1.6;
 }
 
 /* Header Styles */
 header {
-    background-color: #303f9f; /* Darker blue for header */
+    background-color: #303f9f;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -42,7 +42,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #9fa8da; /* Lighter blue on hover */
+    color: #9fa8da;
 }
 
 /* Main Content Styles */
@@ -61,7 +61,7 @@ section {
 }
 
 section h2 {
-    color: #303f9f; /* Darker blue for section titles */
+    color: #303f9f;
     font-size: 1.6rem;
     margin-bottom: 0.8rem;
     border-bottom: 2px solid #9fa8da;
@@ -70,8 +70,8 @@ section h2 {
 
 /* Filter Styles */
 #filters {
-    display: flex; /* Changed to flexbox */
-    flex-direction: column; /* Stack labels and inputs */
+    display: flex;
+    flex-direction: column;
     gap: 0.8rem;
 }
 
@@ -108,7 +108,7 @@ section h2 {
 }
 
 #questions-list li {
-    background-color: #f5f5f5; /* Light gray for list items */
+    background-color: #f5f5f5;
     border: 1px solid #e0e0e0;
     margin-bottom: 0.8rem;
     padding: 0.8rem;
@@ -117,19 +117,19 @@ section h2 {
 }
 
 #questions-list li strong {
-    color: #1a237e; /* Darker blue for question text */
+    color: #1a237e;
 }
 
 #questions-list li ul {
-    padding-left: 20px; /* Indent the bullet points */
+    padding-left: 20px;
 }
 
 #questions-list li ul li {
-    background-color: transparent; /* Remove background color */
-    border: none; /* Remove border */
-    padding: 0.2rem 0; /* Adjust padding */
-    margin-bottom: 0; /* Remove margin */
-    list-style-type: disc; /* Use bullet points */
+    background-color: transparent;
+    border: none;
+    padding: 0.2rem 0;
+    margin-bottom: 0;
+    list-style-type: disc;
 }
 
 /* Flashcard Styles */
@@ -151,21 +151,21 @@ section h2 {
 
 #flashcard .question {
     font-size: 1.2rem;
-    color: #303f9f; /* Darker blue for question */
+    color: #303f9f;
     margin-bottom: 0.8rem;
 }
 
 #flashcard .answer {
     margin-top: 1rem;
-    color: #3f51b5; /* Another shade of blue for answers */
+    color: #3f51b5;
 }
 
 #flashcard .answer ul {
-    padding-left: 20px; /* Indent the bullet points */
+    padding-left: 20px;
 }
 
 #flashcard .answer ul li {
-    list-style-type: disc; /* Use bullet points */
+    list-style-type: disc;
 }
 
 #next-question {
@@ -191,7 +191,7 @@ section h2 {
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #303f9f; /* Darker blue for footer */
+    background-color: #303f9f;
     color: #fff;
     position: relative;
     width: 100%;
@@ -213,7 +213,7 @@ button,
 select,
 input[type="checkbox"] {
     cursor: pointer;
-    -webkit-appearance: none; /* Remove default button styling */
+    -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
