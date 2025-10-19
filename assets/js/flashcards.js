@@ -5,9 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const questionDiv = flashcard.querySelector('.question');
     const answerDiv = flashcard.querySelector('.answer');
     const nextButton = document.getElementById('next-question');
+    const newQuestionsCheckbox = document.getElementById('new-questions');
 
     let currentQuestionIndex = 0;
     let allQuestions = questions.questions;
+
+    function filterQuestions() {
+        if (newQuestionsCheckbox.checked) {
+            allQuestions = questions.getNewQuestions();
+        } else {
+            allQuestions = questions.questions;
+        }
+        currentQuestionIndex = 0; // Reset to the first question after filtering
+    }
 
     function showQuestion() {
         answerDiv.classList.add('hidden');
@@ -26,5 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     nextButton.addEventListener('click', nextQuestion);
 
+    newQuestionsCheckbox.addEventListener('change', () => {
+        filterQuestions();
+        showQuestion(); // Show the first question after filtering
+    });
+
+    filterQuestions(); // Initialize questions
     showQuestion(); // Initial question display
 });
