@@ -95,7 +95,6 @@ section h2 {
 
 @media (min-width: 769px) {
     #filters {
-        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 0.8rem;
     }
